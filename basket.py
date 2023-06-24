@@ -1,0 +1,38 @@
+from turtle import Turtle
+
+class Basket(Turtle):
+    def __init__(self):
+        super().__init__()
+        self.pu()
+        self.color("white")
+        self.shape("square")
+        self.shapesize(stretch_wid=1,stretch_len=8)
+        self.goto(410,150)
+        self.paintNet()
+
+    def paintNet(self):
+        tur=Turtle()
+        tur.pencolor("white")
+        tur.pu()
+        tur.hideturtle()
+        tur.pensize(5)
+        tur.goto(self.xcor()-75,self.ycor())
+        tur.pd()
+        tur.goto(self.xcor()-50,50)
+        tur.pu()
+        tur.goto(self.xcor()-35, self.ycor())
+        tur.pd()
+        tur.goto(self.xcor()-20,50)
+        tur.pu()
+        tur.goto(self.xcor(), self.ycor())
+        tur.pd()
+        tur.goto(self.xcor(), 50)
+        tur.pu()
+        tur.goto(self.xcor() + 75, self.ycor())
+        tur.pd()
+        tur.goto(self.xcor() + 50, 50)
+        tur.pu()
+        tur.goto(self.xcor() +35, self.ycor())
+        tur.pd()
+        tur.goto(self.xcor() + 20, 50)
+        tur.hideturtle()
